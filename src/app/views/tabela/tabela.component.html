@@ -1,0 +1,58 @@
+
+  <div class="tabela mat-elevation-z7" fxLayouAlign="center">
+
+    <table mat-table [dataSource]="conteudo"
+    style="flex: 1 1 100%; box-sizing: border-box; max-width: 95%;
+    place-content: stretch center;
+    "
+    >
+
+      <!-- Instante Column -->
+      <ng-container matColumnDef="instante">
+        <th mat-header-cell *matHeaderCellDef class="cabecalho-tabela-titulo">INSTANTE</th>
+        <td mat-cell *matCellDef="let row">{{row.moment | date : 'dd/MM/yyyy HH:mm'}}</td>
+      </ng-container>
+
+      <!-- Nome Column -->
+      <ng-container  matColumnDef="nome">
+        <th mat-header-cell *matHeaderCellDef  class="cabecalho-tabela-titulo">NOME</th>
+        <td mat-cell *matCellDef="let row">{{row.name}}</td>
+      </ng-container>
+
+      <!-- Idade Column -->
+      <ng-container  matColumnDef="idade">
+        <th mat-header-cell *matHeaderCellDef  class="cabecalho-tabela-titulo">IDADE</th>
+        <td mat-cell *matCellDef="let row">{{row.age}}</td>
+      </ng-container>
+
+      <!-- Plataforma Column -->
+      <ng-container  matColumnDef="plataforma">
+        <th mat-header-cell *matHeaderCellDef class="cabecalho-tabela-titulo" >PLATAFORMA</th>
+        <td class="plataforma-tabela" mat-cell *matCellDef="let row">{{row.gamePlatform}}</td>
+      </ng-container>
+
+      <!-- Gênero Column -->
+      <ng-container  matColumnDef="genero">
+        <th mat-header-cell *matHeaderCellDef class="cabecalho-tabela-titulo" >GÊNERO</th>
+        <td mat-cell *matCellDef="let row">{{row.genreName}}</td>
+      </ng-container>
+
+      <!-- Título Column -->
+      <ng-container  matColumnDef="titulo">
+        <th mat-header-cell *matHeaderCellDef class="cabecalho-tabela-titulo" >TÍTULO DO GAME</th>
+        <td class="titulo-jogos-tabela" mat-cell *matCellDef="let row">{{row.gameTitle}}</td>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="displayedColumns" class="cabecalho-tabela"></tr>
+      <tr class="tabela-cores" mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+
+    <div class="botoes-paginacao">
+
+      <button mat-fab color="primary" *ngFor="let botoes of indice_Paginas; let i = index" class="botao-paginacao" (click)="paginacao(12, i)">
+        {{i+1}}
+      </button>
+
+    </div>
+  </div>
+

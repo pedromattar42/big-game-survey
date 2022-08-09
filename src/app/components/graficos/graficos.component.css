@@ -1,0 +1,97 @@
+table{
+  width: 90%;
+}
+
+.pie-chart{
+  display: grid;
+}
+
+.card-grafico-barras{
+  background-color: #475D67;
+
+  width: 80%;
+
+  font-family: 'Prompt';
+}
+
+.barras-grafico-horizontal{
+  width: 60%;
+}
+
+.card-grafico-generos{
+  margin-right: 0%;
+  width: 500px;
+  height: 420px;
+
+  font-family: 'Prompt';
+
+  background-color: #475D67;
+}
+
+.card-grafico-plataformas{
+
+  width: 500px;
+  height: 420px;
+
+  font-family: 'Prompt';
+
+  background-color: #475D67;
+}
+
+.ngx-charts text{
+  color: white;
+}
+
+body {
+  margin: 0;
+}
+
+.botao-tabela{
+  background-color: #00D6FF;
+  color: #0A1C1E;
+
+  padding-right: 3rem;
+  padding-left: 3rem;
+
+  border-radius: 10px;
+}
+
+.botao-tabela:hover{
+  background-color: #FF6740;
+  color: white;
+}
+
+.charts__botao{
+  position: absolute;
+  right: 0;
+
+  padding-right: 10px;
+}
+
+.charts__card{
+  border-radius: 10px;
+
+  background-color: #32474F;
+
+  width: 86%;
+  height: 2rem;
+}
+
+.graficos-generos-plataforma{
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
+.card-ver-tabela{
+  padding-top: 3rem;
+  padding-bottom: 4rem;
+}
+
+@media (max-width: 800px){
+  .card-grafico-plataformas{
+    margin-top: 20px;
+  }
+}
+
+
+

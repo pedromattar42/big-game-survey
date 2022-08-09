@@ -1,0 +1,77 @@
+
+.titulo{
+  color: #00D6FF;
+
+  position: absolute;
+
+  font-family: 'Prompt';
+}
+
+.subtitulo{
+  color: #FF6740;
+
+  font-size: 1.5rem;
+
+  font-family: 'Prompt';
+}
+
+
+.home__conteudos{
+  padding-top: 60px;
+  text-align: center;
+  margin: 0 auto 0 auto;
+
+  width: 80rem;
+  height: 50rem;
+}
+
+.home__titulo{
+  padding-left: 10rem;
+  padding-top: 10rem;
+
+  font-size:4.5rem;
+}
+
+.home__subtitulo{
+  padding-left: 7rem;
+  padding-top: 6rem;
+
+  position: absolute;
+}
+
+.home__conteudos-imagem{
+  padding-left: 0rem;
+  padding-top: 0rem;
+}
+
+.imagem_gamer{
+  width: 523px;
+  height: 480px;
+  position: absolute;
+}
+
+.home__botao{
+  padding-top: 15rem;
+  padding-left: 15.3rem;
+
+  position: absolute;
+}
+
+.botao{
+  font-family: 'Prompt';
+  color: #071C34;
+
+  background-color: #00D6FF;
+
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.botao:hover{
+  background-color: #FF6740;
+  color: white;
+}
+
+.icone-botao{
+  color: white;
+}

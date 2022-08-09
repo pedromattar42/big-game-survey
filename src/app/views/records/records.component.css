@@ -1,0 +1,46 @@
+/*---------*/
+/* RECORDS */
+/*---------*/
+
+.records__botao{
+  position: absolute;
+  right: 0;
+
+  padding-right: 10px;
+}
+
+.records__card{
+  border-radius: 10px;
+
+  position: absolute;
+
+  background-color: #32474F;
+
+  width: 86%;
+  height: 2rem;
+}
+
+/*---------*/
+/* BOTAO */
+/*---------*/
+
+.botao-grafico{
+  background-color: #00D6FF;
+  color: #0A1C1E;
+
+  padding-right: 3rem;
+  padding-left: 3rem;
+
+
+  border-radius: 10px;
+}
+
+.botao-grafico:hover{
+  background-color: #FF6740;
+  color: white;
+}
+
+.card-ver-grafico{
+  padding-top: 3rem;
+}
+

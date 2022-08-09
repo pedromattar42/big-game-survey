@@ -1,0 +1,63 @@
+table{
+  width: 100%;
+}
+
+.mat-elevation-z8{
+  overflow-x: auto;
+}
+
+.tabela{
+  padding-top: 7rem;
+  padding-bottom: 1rem;
+
+  padding-left: 4rem;
+}
+
+.botoes-paginacao{
+  padding-top: 5px;
+  padding-right: 10rem;
+  text-align: center;
+
+  padding-left: 90px;
+}
+
+.botao-paginacao{
+  border-radius: 15px;
+  padding: 0 1px;
+
+  margin-left: 5px;
+  margin-top: 50px;
+  margin-bottom: 100px;
+
+  background-color: #2B3D44;
+  color: #ff6b43
+}
+
+.botao-paginacao:hover{
+  color: #071C34;
+  background-color: #00D6FF;
+}
+
+.cabecalho-tabela{
+  background-color: #00D2FA;
+}
+
+.cabecalho-tabela-titulo{
+  color: #081A28;
+}
+
+.tabela-cores:nth-child(even){
+  background-color: #475D67;
+}
+
+.tabela-cores{
+  background-color: #2B3D44;
+}
+
+.titulo-jogos-tabela{
+  color: #00D2FA;
+}
+
+.plataforma-tabela{
+  color: #ff6b43;
+}

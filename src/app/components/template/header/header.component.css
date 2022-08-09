@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap');
+
+.header{
+  align-items: center;
+
+  width: 100%;
+
+  background-color: #32474F;
+}
+
+.logo{
+  max-height: 30px;
+}
+
+.header__titulo{
+  padding-left: 10px;
+
+  color: #FF6B43;
+  font-family: 'Prompt';
+}
+
+.header__titulo_parte_2{
+  padding-left: 5px;
+
+  color: white;
+  font-family: 'Prompt';
+}
+

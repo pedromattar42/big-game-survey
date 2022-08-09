@@ -1,0 +1,84 @@
+<div class="charts">
+
+  <div fxLayout="row" fxLayoutAlign="center" class="card-ver-tabela">
+    <mat-card class="charts__card">
+      <div  class="charts__botao" >
+        <a routerLink="/records">
+        <button class="botao-tabela" mat-raised-button>VER TABELA</button>
+        </a>
+      </div>
+    </mat-card>
+  </div>
+
+
+  <div fxLayout="row" fxLayoutAlign="center center" >
+    <mat-card class="card-grafico-barras">
+      <mat-card-title>Jogos mais votados</mat-card-title>
+      <mat-card-content #container style="height: 400px;flex-direction: row; box-sizing: border-box; display: flex;">
+                  <ngx-charts-bar-horizontal [view]="[container.offsetWidth, container.offsetHeight]"
+                  [results]="jogosQtde"
+                  [scheme]="colorScheme"
+                  [showXAxisLabel]="true"
+                  [showGridLines]="false"
+                  [showYAxisLabel]="true"
+                  [xAxis]="false"
+                  [yAxis]="true"
+                  [barPadding]="15"
+                  [showDataLabel]="true"
+                  [gradient]="false"
+                  fxFlex="100"
+                  style="fill: #00D9f5;
+                  flex: 1 1 100%;
+                  max-width: 100%;
+                  box-sizing: border-box;
+                  ">
+                  >
+                </ngx-charts-bar-horizontal>
+      </mat-card-content>
+    </mat-card>
+  </div>
+
+
+
+<div fxLayout="row wrap" fxLayoutAlign="space-evenly"
+fxLayoutGap.xs="12px"
+fxLayout.xs="column"
+class="graficos-generos-plataforma"
+>
+  <mat-card class="card-grafico-generos">
+    <mat-card-title>Gêneros (EM %)</mat-card-title>
+      <div class="grafico-generos">
+        <ngx-charts-pie-chart
+        [view]="[500,400]"
+        [scheme]="colorSchemeGeneros"
+        [results]="generosPorcentagem"
+        [gradient]="true"
+        [doughnut]="true"
+        >
+        </ngx-charts-pie-chart>
+      </div>
+  </mat-card>
+
+  <mat-card class="card-grafico-plataformas">
+    <mat-card-title>Plataformas (EM %)</mat-card-title>
+    <div class="grafico-plataformas">
+     <ngx-charts-pie-chart
+     [view]="[500,400]"
+     [scheme]="colorSchemePlataformas"
+     [results]="plataformasPorcentagem"
+     [gradient]="true"
+     [doughnut]="true"
+     >
+
+     </ngx-charts-pie-chart>
+     </div>
+
+   </mat-card>
+
+</div>
+
+</div>
+
+
+
+
